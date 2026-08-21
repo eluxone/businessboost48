@@ -1,0 +1,3 @@
+BusinessBoost48 V4 deployment trigger
+
+Force fresh Vercel GitHub deployment.
