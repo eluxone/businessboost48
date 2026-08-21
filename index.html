@@ -1932,12 +1932,6 @@
       if (on) { startAmbient(); soundPulse(); } else stopAmbient();
     }
 
-    function unlockSound(event) {
-      if (soundUnlocked || event.target.closest('.sound-toggle')) return;
-      soundUnlocked = true;
-      setSound(true);
-    }
-    addEventListener('pointerdown', unlockSound, { passive: true });
     addEventListener('click', function (event) {
       if (soundUnlocked || (event.target.closest && event.target.closest('.sound-toggle'))) return;
       soundUnlocked = true;
