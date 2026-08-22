@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "ai": "^7.0.77"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2"
+  }
+}
