@@ -22,8 +22,9 @@ test('starts sound on the first usable interaction without showing a choice pane
   assert.doesNotMatch(homepage, /function showExperience/);
   assert.doesNotMatch(homepage, /quietChoice\.addEventListener/);
   assert.match(homepage, /function installSoundUnlockers/);
-  assert.match(homepage, /addEventListener\('pointerdown',unlockFromFirstGesture,\{capture:true,passive:true\}\)/);
-  assert.match(homepage, /addEventListener\('touchstart',unlockFromFirstGesture,\{capture:true,passive:true\}\)/);
+  assert.match(homepage, /addEventListener\('click',unlockFromFirstGesture,true\)/);
+  assert.doesNotMatch(homepage, /addEventListener\('pointerdown',unlockFromFirstGesture/);
+  assert.doesNotMatch(homepage, /addEventListener\('touchstart',unlockFromFirstGesture/);
   assert.match(homepage, /addEventListener\('keydown',unlockFromFirstGesture,true\)/);
   assert.match(homepage, /localStorage\.getItem\('bb48-sound-muted-v2'\)/);
   assert.match(homepage, /localStorage\.removeItem\('bb48-sound'\)/);
