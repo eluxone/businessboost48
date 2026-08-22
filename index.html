@@ -181,7 +181,7 @@
     .hero .eyebrow { margin-bottom: clamp(22px,4vh,43px); }
     .hero h1 { max-width: 990px; margin: 0; font: 400 clamp(4.35rem,8.4vw,9.7rem)/.77 "Instrument Serif",Georgia,serif; letter-spacing: -.078em; }
     .hero h1 .line { display: block; overflow: hidden; }
-    .hero h1 .line > span { display: block; transform: none; }
+    .hero h1 .line > span { display: block; transform: none; white-space: nowrap; }
     .hero h1 em { position: relative; color: var(--accent); font-weight: 400; transition: color .7s ease; }
     .hero h1 em::after { content: ""; position: absolute; left: 2%; right: -2%; bottom: 4%; height: 2px; background: linear-gradient(90deg,var(--accent),var(--blue),transparent); transform: scaleX(0); transform-origin: left; }
     .loaded .hero h1 em::after { animation: draw-line 1.2s .8s var(--ease) forwards; }
