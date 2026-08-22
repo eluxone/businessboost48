@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">BusinessBoost48 phase-shift B mark</title>
+  <style>
+    .signal,.shift{transform-box:fill-box;transform-origin:center}
+    @media (prefers-reduced-motion:no-preference){
+      .signal{animation:signal 4.8s cubic-bezier(.2,.8,.2,1) infinite}
+      .shift{animation:shift 4.8s cubic-bezier(.2,.8,.2,1) infinite}
+    }
+    @keyframes signal{0%,76%,100%{transform:scaleY(1);opacity:1}82%{transform:scaleY(.45);opacity:.7}88%{transform:scaleY(1);opacity:1}}
+    @keyframes shift{0%,76%,100%{transform:translateX(0)}82%{transform:translateX(1.5px)}88%{transform:translateX(0)}}
+  </style>
+  <path class="signal" fill="#d7ff63" d="M25.8 5h5.2v54h-5.2z"/>
+  <path fill="#080a0d" d="M7 5h20v54H7z"/>
+  <g class="shift" fill="#080a0d" fill-rule="evenodd">
+    <path d="M29 5h10c12.5 0 20.5 6.9 20.5 17.2 0 10.5-8 17.3-20.5 17.3H29V5Zm8.5 9v16.5h1.3c7.5 0 12-3.1 12-8.3 0-5.1-4.5-8.2-12-8.2h-1.3Z"/>
+    <path d="M29 29h11.5C54 29 61 35 61 44s-7 15-20.5 15H29V29Zm8.5 9v12h3C47.8 50 52 47.8 52 44s-4.2-6-11.5-6h-3Z"/>
+  </g>
+</svg>
