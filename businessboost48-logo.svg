@@ -1,13 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 128" role="img" aria-labelledby="title desc">
-  <title id="title">BusinessBoost48</title>
-  <desc id="desc">BusinessBoost48 wordmark with the phase-shift B symbol.</desc>
-  <g transform="translate(8 20)">
-    <path fill="#d7ff63" d="M35.3 0h7.8v88h-7.8z"/>
-    <path fill="#080a0d" d="M5 0h32v88H5z"/>
-    <g fill="#080a0d" fill-rule="evenodd">
-      <path d="M40 0h16c20 0 32.8 11 32.8 27.5C88.8 44.2 76 55 56 55H40V0Zm13.6 14.4v26.4h2c12 0 19.2-5 19.2-13.3 0-8.2-7.2-13.1-19.2-13.1h-2Z"/>
-      <path d="M40 38.5h18.4c21.6 0 32.8 9.7 32.8 24.2C91.2 77.2 80 88 58.4 88H40V38.5Zm13.6 14.4v20h4.8c11.7 0 18.4-3.8 18.4-10.2 0-6.3-6.7-9.8-18.4-9.8h-4.8Z"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 120" role="img" aria-labelledby="title desc">
+  <title id="title">BusinessBoost slash 48</title>
+  <desc id="desc">BusinessBoost wordmark with the slash 48 signature.</desc>
+  <text x="8" y="82" fill="#080a0d" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="700" letter-spacing="-3.6">Business<tspan font-weight="800">Boost</tspan></text>
+  <g transform="translate(450 26) scale(1.05)">
+    <path fill="#7a9400" d="M5 59 18 5h9L14 59z"/>
+    <path fill="#080a0d" d="M46 6h11L38 38h10V27h9v11h7v9h-7v11h-9V47H25v-9L46 6Z"/>
+    <path fill="#080a0d" fill-rule="evenodd" d="M79 5c9 0 15 5 15 13 0 5-2.5 9-7 12 5 2.5 8 7 8 13 0 10-6 16-16 16s-16-6-16-16c0-6 3-10.5 8-13-4.5-3-7-7-7-12 0-8 6-13 15-13Zm0 8c-3.5 0-6 2-6 5s2.5 5.5 6 5.5 6-2.5 6-5.5-2.5-5-6-5Zm0 23c-4 0-7 2.5-7 6.5s3 6.5 7 6.5 7-2.5 7-6.5-3-6.5-7-6.5Z"/>
   </g>
-  <text x="126" y="81" fill="#080a0d" font-family="Arial,Helvetica,sans-serif" font-size="54" font-weight="700" letter-spacing="-3">Business<tspan font-weight="800">Boost</tspan><tspan fill="#7a9400">48</tspan></text>
 </svg>

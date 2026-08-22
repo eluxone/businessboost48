@@ -22,11 +22,14 @@
     a { color:inherit; }
     :focus-visible { outline:2px solid #694dff; outline-offset:4px; }
     .topbar { width:min(1180px,calc(100% - 40px)); height:82px; margin:auto; border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; }
-    .brand { display:inline-flex; align-items:center; gap:9px; color:inherit; font-weight:680; letter-spacing:-.04em; text-decoration:none; }
-    .brand img { display:block; width:28px; height:28px; flex:0 0 28px; }
-    .brand-word { display:inline-flex; align-items:baseline; }
-    .brand-word strong { font-weight:760; }
-    .brand-word em { margin-left:.08em; color:#536500; font-style:normal; font-weight:760; }
+    .brand { --slash-travel:-103px; display:inline-flex; align-items:center; gap:.35em; color:inherit; font-weight:680; letter-spacing:-.04em; text-decoration:none; white-space:nowrap; }
+    .brand-name,.brand-code { display:inline-flex; align-items:baseline; }
+    .brand-name strong { font-weight:760; }
+    .brand-code { color:#536500; font-weight:760; letter-spacing:-.06em; }
+    .brand-code b { display:inline-block; font-size:1.08em; font-weight:500; transform:skew(-8deg); transform-origin:center; animation:brandSlashScan 5.6s cubic-bezier(.2,.8,.2,1) infinite; }
+    .brand-code i { font-style:normal; }
+    @keyframes brandSlashScan { 0%,72%,100% { transform:translateX(0) scaleY(1) skew(-8deg); opacity:1; } 79% { transform:translateX(var(--slash-travel)) scaleY(.45) skew(-8deg); opacity:.24; } 88% { transform:translateX(0) scaleY(1) skew(-8deg); opacity:1; } }
+    @media(prefers-reduced-motion:reduce) { .brand-code b { animation:none; } }
     .back { font-size:12px; text-decoration:none; border-bottom:1px solid; padding-bottom:4px; }
     main { width:min(1180px,calc(100% - 40px)); margin:auto; padding:clamp(70px,10vw,150px) 0 120px; }
     .kicker { color:var(--muted); font-size:9px; font-weight:680; letter-spacing:.16em; text-transform:uppercase; }
@@ -52,11 +55,12 @@
       footer { display:block; }
       footer a { display:inline-block; margin-top:18px; }
     }
+    @media(max-width:360px) { .brand { --slash-travel:-10px; } .brand-name { display:none; } }
   </style>
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="/" aria-label="BusinessBoost48 — home"><img src="/brand-mark-dark.svg" alt="" width="28" height="28"><span class="brand-word">Business<strong>Boost</strong><em>48</em></span></a>
+    <a class="brand" href="/" aria-label="BusinessBoost48 — home"><span class="brand-name">Business<strong>Boost</strong></span><span class="brand-code" aria-hidden="true"><b>/</b><i>48</i></span></a>
     <a class="back" href="/">Back to the website ↗</a>
   </header>
   <main>
