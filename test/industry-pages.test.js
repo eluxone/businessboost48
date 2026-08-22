@@ -62,6 +62,7 @@ test('keeps every niche page indexable, canonical and internally linked', () => 
 
 test('shares the 2027 interaction system across all niche pages', () => {
   assert.match(experience, /const whatsappNumber = '447438893486'/);
+  assert.match(experience, /aria-label="WA WhatsApp — open chat for/);
   assert.match(experience, /fetch\('\/api\/chat'/);
   assert.match(experience, /localStorage\.getItem\('bb48-sound-muted-v2'\)/);
   assert.match(experience, /addEventListener\('click', unlockFromGesture, true\)/);

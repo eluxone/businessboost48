@@ -31,7 +31,7 @@
   dock.className = 'conversion-dock';
   dock.dataset.whatsapp = whatsappNumber;
   dock.innerHTML = `
-    <a class="niche-whatsapp" href="https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappOpening)}" target="_blank" rel="noopener" aria-label="Open WhatsApp chat for a ${nicheName} website review">
+    <a class="niche-whatsapp" href="https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappOpening)}" target="_blank" rel="noopener" aria-label="WA WhatsApp — open chat for a ${nicheName} website review">
       <span class="niche-wa-mark" aria-hidden="true">WA</span><span>WhatsApp</span>
     </a>
     <button class="niche-ai-launch" type="button" aria-label="Open AI website adviser for ${escapeHtml(nicheName.toLowerCase())} websites" aria-haspopup="dialog" aria-expanded="false" aria-controls="niche-chat">
