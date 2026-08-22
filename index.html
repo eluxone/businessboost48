@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#050608">
-  <meta name="description" content="AI-powered web design for UK small businesses. BusinessBoost48 builds fast, conversion-focused websites with practical AI and human support.">
+  <meta name="description" content="Custom AI-powered websites for UK small businesses. Strategy, copy, mobile-first design, technical SEO and practical AI, with packages from £299.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="author" content="BusinessBoost48">
   <link rel="canonical" href="https://www.businessboost48.co.uk/">
@@ -14,7 +14,7 @@
   <meta property="og:site_name" content="BusinessBoost48">
   <meta property="og:url" content="https://www.businessboost48.co.uk/">
   <meta property="og:title" content="AI Website Design for UK Businesses | BusinessBoost48">
-  <meta property="og:description" content="Fast, conversion-focused websites with practical AI, mobile-first performance and human support.">
+  <meta property="og:description" content="Strategy, copy, custom design, technical SEO and practical AI—built to turn more website visits into useful enquiries.">
   <meta property="og:image" content="https://www.businessboost48.co.uk/og.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -22,7 +22,7 @@
   <meta property="og:image:alt" content="BusinessBoost48 — Your next customer is sending a signal.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="AI Website Design for UK Businesses | BusinessBoost48">
-  <meta name="twitter:description" content="Fast, conversion-focused websites with practical AI, mobile-first performance and human support.">
+  <meta name="twitter:description" content="Strategy, copy, custom design, technical SEO and practical AI—built to turn more website visits into useful enquiries.">
   <meta name="twitter:image" content="https://www.businessboost48.co.uk/og.png">
   <meta name="twitter:image:alt" content="BusinessBoost48 — Your next customer is sending a signal.">
   <title>AI Website Design for UK Businesses | BusinessBoost48</title>
@@ -49,7 +49,7 @@
           "height": 512
         },
         "image": "https://www.businessboost48.co.uk/og.png",
-        "description": "BusinessBoost48 designs fast, conversion-focused websites with practical AI for UK small businesses."
+        "description": "BusinessBoost48 combines strategy, copy, custom web design, technical SEO and practical AI for UK small businesses."
       },
       {
         "@type": "WebSite",
@@ -65,7 +65,7 @@
         "@id": "https://www.businessboost48.co.uk/#webpage",
         "url": "https://www.businessboost48.co.uk/",
         "name": "AI Website Design for UK Businesses | BusinessBoost48",
-        "description": "AI-powered web design for UK small businesses, combining conversion-focused design, practical AI and human support.",
+        "description": "Custom AI-powered website design for UK small businesses, combining strategy, copy, mobile-first design, technical SEO and practical AI.",
         "isPartOf": { "@id": "https://www.businessboost48.co.uk/#website" },
         "about": { "@id": "https://www.businessboost48.co.uk/#organization" },
         "primaryImageOfPage": {
@@ -119,7 +119,7 @@
       --ease: cubic-bezier(.2,.78,.2,1);
     }
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; background: var(--night); }
+    html { scroll-behavior: smooth; scroll-padding-top: 82px; background: var(--night); }
     body {
       margin: 0;
       min-width: 320px;
@@ -160,7 +160,9 @@
     .sound-toggle,.header-review { height: 36px; display: inline-flex; align-items: center; justify-content: center; border-radius: 2px; cursor: pointer; font: 700 .55rem/1 "Space Mono",monospace; letter-spacing: .075em; text-transform: uppercase; }
     .sound-toggle { min-width: 112px; gap: .55rem; padding: 0 12px; border: 1px solid rgba(255,255,255,.18); background: transparent; color: rgba(255,255,255,.68); }
     .sound-bars { height: 12px; display: inline-flex; align-items: center; gap: 2px; }
-    .sound-bars i { width: 1px; height: 4px; background: currentColor; }
+    .sound-bars i { width: 2px; height: 5px; background: currentColor; }
+    .sound-bars i:nth-child(2) { height: 11px; }
+    .sound-bars i:nth-child(3) { height: 7px; }
     .sound-toggle.on .sound-bars i { animation: meter .72s ease-in-out infinite alternate; }
     .sound-toggle.on .sound-bars i:nth-child(2) { animation-delay: -.23s; }
     .sound-toggle.on .sound-bars i:nth-child(3) { animation-delay: -.47s; }
@@ -186,7 +188,7 @@
     .hero h1 em::after { content: ""; position: absolute; left: 2%; right: -2%; bottom: 4%; height: 2px; background: linear-gradient(90deg,var(--accent),var(--blue),transparent); transform: scaleX(0); transform-origin: left; }
     .loaded .hero h1 em::after { animation: draw-line 1.2s .8s var(--ease) forwards; }
     .hero-copy { position: absolute; z-index: 5; left: var(--page-x); bottom: 91px; width: min(44vw,650px); display: grid; grid-template-columns: minmax(220px,1fr) auto; align-items: end; gap: clamp(1.4rem,4vw,4.6rem); }
-    .hero-copy p { max-width: 410px; margin: 0; color: rgba(243,238,230,.66); font-size: clamp(.9rem,1.1vw,1.06rem); line-height: 1.5; }
+    .hero-copy p { max-width: 410px; margin: 0; color: rgba(243,238,230,.66); font-family: Arial,sans-serif; font-size: clamp(.9rem,1.1vw,1.06rem); line-height: 1.5; }
     .hero-actions { display: flex; flex-direction: column; align-items: flex-start; gap: .85rem; }
     .primary-cta,.signal-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 1.6rem; min-height: 46px; border-bottom: 1px solid currentColor; font-size: .78rem; font-weight: 700; }
     .primary-cta span,.signal-link span { display: grid; place-items: center; width: 31px; height: 31px; border: 1px solid currentColor; transition: transform .25s var(--ease),background .25s ease,color .25s ease; }
@@ -210,6 +212,63 @@
     .industry:hover,.industry[aria-pressed="true"] { color: white; }
     .industry[aria-pressed="true"]::after { content: ""; position: absolute; left: 0; right: 0; bottom: 2px; height: 1px; background: var(--accent); animation: draw-line .55s var(--ease) both; }
     .rotation-toggle { min-height: 36px; padding: 0 0 0 1rem; border: 0; border-left: 1px solid rgba(255,255,255,.16); background: none; color: rgba(255,255,255,.45); cursor: pointer; font: 400 .5rem/1 "Space Mono",monospace; letter-spacing: .07em; text-transform: uppercase; }
+    .value-strip { position: relative; z-index: 5; background: var(--lime); color: var(--night); border-top: 1px solid rgba(0,0,0,.2); border-bottom: 1px solid rgba(0,0,0,.2); }
+    .value-strip-inner { display: grid; grid-template-columns: minmax(180px,.9fr) repeat(5,minmax(120px,1fr)); max-width: 1600px; margin: auto; padding: 0 var(--page-x); }
+    .value-label,.value-item { min-height: 82px; display: flex; align-items: center; border-right: 1px solid rgba(0,0,0,.18); }
+    .value-label { padding-right: 1.25rem; color: rgba(5,6,8,.62); font: 700 .56rem/1.35 "Space Mono",monospace; letter-spacing: .1em; text-transform: uppercase; }
+    .value-item { position: relative; gap: .65rem; padding: 0 1.15rem; font-size: .76rem; font-weight: 700; line-height: 1.25; }
+    .value-item:last-child { border-right: 0; }
+    .value-item::before { content: ""; width: 6px; height: 6px; flex: 0 0 auto; border-radius: 50%; background: var(--night); box-shadow: 0 0 0 4px rgba(5,6,8,.1); }
+    .transformations { --demo-accent:#5b74ff; position: relative; overflow: hidden; padding: clamp(110px,16vh,185px) var(--page-x); background: var(--paper); color: var(--ink); }
+    .transformations::before { content: ""; position: absolute; top: 0; right: -8vw; width: 48vw; height: 48vw; border-radius: 50%; background: radial-gradient(circle,color-mix(in srgb,var(--demo-accent),transparent 73%),transparent 67%); filter: blur(18px); opacity: .42; pointer-events: none; transition: background .6s ease; }
+    .transformation-intro { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(150px,.42fr) minmax(0,1.15fr) minmax(280px,.43fr); gap: 4vw; align-items: end; margin-bottom: 7vh; }
+    .transformation-intro .eyebrow { --accent:#4962d6; align-self: start; margin-top: .75rem; }
+    .transformation-intro h2 { max-width: 920px; margin: 0; font: 400 clamp(3.45rem,6.6vw,7.5rem)/.84 "Instrument Serif",Georgia,serif; letter-spacing: -.067em; }
+    .transformation-intro h2 em { color: #4962d6; font-weight: 400; }
+    .transformation-intro p { max-width: 430px; margin: 0 0 .65rem; color: rgba(17,18,20,.64); font-size: .9rem; line-height: 1.6; }
+    .demo-switcher { position: relative; z-index: 4; display: grid; grid-template-columns: repeat(4,1fr); margin-bottom: 1rem; border-top: 1px solid rgba(0,0,0,.28); }
+    .demo-tab { position: relative; min-height: 62px; padding: 0; border: 0; border-right: 1px solid rgba(0,0,0,.16); border-bottom: 1px solid rgba(0,0,0,.28); background: transparent; color: rgba(17,18,20,.52); cursor: pointer; font: 700 .58rem/1 "Space Mono",monospace; letter-spacing: .08em; text-transform: uppercase; transition: color .25s ease,background .25s ease; }
+    .demo-tab:last-child { border-right: 0; }
+    .demo-tab:hover { color: var(--ink); }
+    .demo-tab[aria-pressed="true"] { color: var(--ink); background: color-mix(in srgb,var(--demo-accent),transparent 82%); }
+    .demo-tab[aria-pressed="true"]::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: var(--demo-accent); box-shadow: 0 0 16px color-mix(in srgb,var(--demo-accent),transparent 24%); }
+    .transformation-stage { position: relative; z-index: 3; display: grid; grid-template-columns: minmax(0,.9fr) 72px minmax(0,1.1fr); align-items: center; min-height: 610px; padding: clamp(30px,5vw,78px); overflow: hidden; border-radius: 3px; background: linear-gradient(125deg,rgba(255,255,255,.035),transparent 38%),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px) 0 0/8.333% 100%,#080a0e; box-shadow: 0 24px 70px rgba(10,8,17,.17); }
+    .transformation-stage::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 74% 48%,color-mix(in srgb,var(--demo-accent),transparent 80%),transparent 30%); transition: background .6s ease; }
+    .browser-wrap { position: relative; z-index: 2; min-width: 0; }
+    .browser-label { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: .8rem; color: rgba(255,255,255,.46); font: 700 .52rem/1.3 "Space Mono",monospace; letter-spacing: .09em; text-transform: uppercase; }
+    .browser-label b { color: var(--demo-accent); font-weight: 400; transition: color .6s ease; }
+    .browser { position: relative; overflow: hidden; min-height: 370px; border: 1px solid rgba(255,255,255,.18); border-radius: 12px; background: #f1efe8; color: #17181a; box-shadow: 0 25px 65px rgba(0,0,0,.34); transition: transform .7s var(--ease),border-color .6s ease,box-shadow .6s ease; }
+    .browser-before { opacity: .7; filter: grayscale(1) contrast(.82); transform: perspective(900px) rotateY(4deg) rotateZ(-1.4deg) scale(.94); }
+    .browser-after { border-color: color-mix(in srgb,var(--demo-accent),white 18%); transform: perspective(900px) rotateY(-3deg) rotateZ(.7deg); box-shadow: 0 30px 90px rgba(0,0,0,.52),0 0 54px color-mix(in srgb,var(--demo-accent),transparent 68%); }
+    .browser-after::after { content: ""; position: absolute; z-index: 8; left: 0; right: 0; top: -4px; height: 2px; background: linear-gradient(90deg,transparent,var(--demo-accent),white,var(--demo-accent),transparent); box-shadow: 0 0 18px var(--demo-accent); animation: browser-scan 5s ease-in-out infinite; }
+    .browser-chrome { height: 34px; display: grid; grid-template-columns: 52px 1fr 52px; align-items: center; gap: .5rem; padding: 0 10px; border-bottom: 1px solid rgba(0,0,0,.14); background: #e3e1da; }
+    .chrome-dots { display: flex; gap: 4px; }
+    .chrome-dots i { width: 6px; height: 6px; border-radius: 50%; background: #b6b2aa; }
+    .address { overflow: hidden; padding: 5px 9px; border: 1px solid rgba(0,0,0,.1); border-radius: 3px; background: rgba(255,255,255,.55); color: rgba(17,18,20,.48); font: 400 .46rem/1 "Space Mono",monospace; white-space: nowrap; text-overflow: ellipsis; }
+    .before-site { min-height: 336px; padding: clamp(22px,3vw,44px); text-align: center; background: linear-gradient(#dad7cf,#eeeae2); }
+    .before-nav { display: flex; justify-content: center; gap: .75rem; margin-bottom: 3.5rem; color: rgba(0,0,0,.38); font: 700 .45rem/1 Arial,sans-serif; text-transform: uppercase; }
+    .before-site h3 { max-width: 390px; margin: 0 auto 1rem; color: #333; font: 700 clamp(1.65rem,2.3vw,2.8rem)/1 Arial,sans-serif; letter-spacing: -.04em; text-transform: uppercase; }
+    .before-site p { max-width: 340px; margin: auto; color: rgba(0,0,0,.48); font: 400 .7rem/1.45 Arial,sans-serif; }
+    .before-button { display: inline-block; margin-top: 2rem; padding: .65rem 1rem; border: 1px solid #777; color: #555; font: 700 .48rem/1 Arial,sans-serif; text-transform: uppercase; }
+    .after-site { position: relative; min-height: 336px; overflow: hidden; padding: clamp(22px,3vw,42px); background: #0c0d11; color: white; }
+    .after-site::before { content: ""; position: absolute; width: 230px; height: 230px; right: -70px; top: -70px; border: 1px solid color-mix(in srgb,var(--demo-accent),transparent 48%); border-radius: 50%; box-shadow: 0 0 55px color-mix(in srgb,var(--demo-accent),transparent 74%),inset 0 0 55px color-mix(in srgb,var(--demo-accent),transparent 86%); transition: border-color .6s ease,box-shadow .6s ease; }
+    .after-nav { position: relative; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: clamp(44px,6vw,84px); font-size: .64rem; font-weight: 700; }
+    .after-nav span:last-child { padding: .5rem .68rem; border: 1px solid color-mix(in srgb,var(--demo-accent),white 18%); color: var(--demo-accent); font: 700 .46rem/1 "Space Mono",monospace; text-transform: uppercase; transition: color .6s ease,border-color .6s ease; }
+    .after-kicker { position: relative; z-index: 2; display: block; margin-bottom: .72rem; color: var(--demo-accent); font: 700 .48rem/1 "Space Mono",monospace; letter-spacing: .1em; text-transform: uppercase; transition: color .6s ease; }
+    .after-site h3 { position: relative; z-index: 2; max-width: 480px; margin: 0; font: 400 clamp(2.35rem,4vw,4.7rem)/.8 "Instrument Serif",Georgia,serif; letter-spacing: -.06em; }
+    .after-site p { position: relative; z-index: 2; max-width: 360px; margin: 1.15rem 0 1.5rem; color: rgba(255,255,255,.57); font-size: .68rem; line-height: 1.5; }
+    .after-action { position: relative; z-index: 2; display: inline-flex; align-items: center; gap: .8rem; padding-bottom: .42rem; border-bottom: 1px solid var(--demo-accent); color: white; font-size: .62rem; font-weight: 700; }
+    .after-action span { color: var(--demo-accent); transition: color .6s ease; }
+    .scan-divider { position: relative; z-index: 4; align-self: stretch; display: grid; place-items: center; }
+    .scan-divider::before { content: ""; position: absolute; top: 4%; bottom: 4%; width: 1px; background: linear-gradient(transparent,var(--demo-accent),white,var(--demo-accent),transparent); box-shadow: 0 0 22px var(--demo-accent); transition: background .6s ease,box-shadow .6s ease; }
+    .scan-divider span { position: relative; padding: .6rem .2rem; background: #080a0e; color: rgba(255,255,255,.5); font: 400 .48rem/1 "Space Mono",monospace; letter-spacing: .08em; text-transform: uppercase; writing-mode: vertical-rl; }
+    .demo-caption { position: relative; z-index: 4; display: grid; grid-template-columns: minmax(220px,.45fr) minmax(0,1.55fr); gap: 5vw; margin-top: 2rem; padding-top: 1.2rem; border-top: 1px solid rgba(0,0,0,.27); }
+    .demo-honesty { margin: 0; color: rgba(17,18,20,.54); font: 400 .56rem/1.55 "Space Mono",monospace; letter-spacing: .07em; text-transform: uppercase; }
+    .demo-summary { display: grid; grid-template-columns: minmax(240px,.8fr) minmax(0,1.2fr) auto; gap: 3vw; align-items: start; }
+    .demo-summary h3 { margin: 0; font: 400 clamp(1.8rem,3vw,3.35rem)/.96 "Instrument Serif",Georgia,serif; letter-spacing: -.045em; }
+    .demo-features { display: grid; grid-template-columns: 1fr 1fr; gap: .55rem 1.2rem; margin: .25rem 0 0; padding: 0; list-style: none; color: rgba(17,18,20,.64); font-size: .76rem; }
+    .demo-features li::before { content: "↳"; margin-right: .45rem; color: #4962d6; }
+    .demo-route { display: inline-flex; align-items: center; gap: .7rem; padding-bottom: .4rem; border-bottom: 1px solid currentColor; font-size: .72rem; font-weight: 700; white-space: nowrap; }
     .manifesto { position: relative; z-index: 4; padding: clamp(110px,17vh,200px) var(--page-x) clamp(100px,16vh,180px); background: var(--paper); color: var(--ink); }
     .manifesto::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 1px; background: linear-gradient(90deg,var(--lime),var(--blue),var(--ember),transparent); }
     .manifesto .eyebrow { --accent: #6f8020; margin-bottom: 6vh; }
@@ -262,6 +321,7 @@
     .frequency-result small { display: block; margin-bottom: .75rem; font: 700 .52rem/1 "Space Mono",monospace; letter-spacing: .1em; text-transform: uppercase; }
     .frequency-result blockquote { margin: 0 0 1.3rem; font: 400 clamp(1.45rem,2.3vw,2.55rem)/1 "Instrument Serif",Georgia,serif; letter-spacing: -.035em; }
     .result-outcome { display: flex; justify-content: space-between; gap: 1rem; padding-top: .75rem; border-top: 1px solid rgba(0,0,0,.28); font: 700 .55rem/1.3 "Space Mono",monospace; letter-spacing: .055em; text-transform: uppercase; }
+    .industry-route { display: inline-flex; align-items: center; gap: .55rem; margin-top: 1.15rem; padding-bottom: .35rem; border-bottom: 1px solid rgba(0,0,0,.55); font-size: .7rem; font-weight: 700; }
     .frequency-index { position: absolute; z-index: 7; left: var(--page-x); right: var(--page-x); bottom: 26px; display: grid; grid-template-columns: repeat(4,1fr); gap: 3px; }
     .frequency-button { position: relative; min-height: 57px; padding: 0 0 0 35px; border: 0; border-top: 1px solid rgba(255,255,255,.25); background: none; color: rgba(255,255,255,.45); text-align: left; cursor: pointer; font: 700 .58rem/1 "Space Mono",monospace; letter-spacing: .07em; text-transform: uppercase; transition: color .25s ease,border-color .25s ease; }
     .frequency-button::before { content: attr(data-index); position: absolute; left: 0; color: rgba(255,255,255,.25); }
@@ -281,12 +341,29 @@
     .outcome-row > span { color: rgba(255,255,255,.7); font: 400 .52rem/1 "Space Mono",monospace; letter-spacing: .1em; text-transform: uppercase; }
     .outcome-row h3 { position: relative; margin: 0; font: 400 clamp(2rem,3.2vw,3.7rem)/.95 "Instrument Serif",Georgia,serif; letter-spacing: -.045em; }
     .outcome-row p { position: relative; max-width: 420px; margin: 0; color: rgba(255,255,255,.56); font-size: .88rem; line-height: 1.55; }
+    .trust { position: relative; overflow: hidden; padding: clamp(110px,16vh,185px) var(--page-x); background: #0b0c11; }
+    .trust::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 82% 26%,rgba(91,116,255,.18),transparent 25%),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px) 0 0/12.5vw 100%; pointer-events: none; }
+    .trust-intro { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(170px,.42fr) minmax(0,1.15fr) minmax(280px,.43fr); gap: 4vw; align-items: end; margin-bottom: 9vh; }
+    .trust-intro .eyebrow { align-self: start; margin-top: .75rem; }
+    .trust-intro h2 { max-width: 880px; margin: 0; font: 400 clamp(3.45rem,6.6vw,7.5rem)/.84 "Instrument Serif",Georgia,serif; letter-spacing: -.067em; }
+    .trust-intro h2 em { color: var(--lime); font-weight: 400; }
+    .trust-intro p { max-width: 430px; margin: 0 0 .65rem; color: rgba(255,255,255,.58); font-size: .9rem; line-height: 1.6; }
+    .trust-grid { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(3,1fr); border-top: 1px solid rgba(255,255,255,.18); border-bottom: 1px solid rgba(255,255,255,.18); }
+    .trust-card { min-height: 300px; padding: clamp(28px,3vw,48px); border-right: 1px solid rgba(255,255,255,.16); }
+    .trust-card:last-child { border-right: 0; }
+    .trust-card > span { display: block; margin-bottom: clamp(70px,9vh,118px); color: var(--card-color,var(--lime)); font: 700 .56rem/1 "Space Mono",monospace; letter-spacing: .1em; text-transform: uppercase; }
+    .trust-card h3 { margin: 0 0 1rem; font: 400 clamp(2rem,3vw,3.45rem)/.94 "Instrument Serif",Georgia,serif; letter-spacing: -.045em; }
+    .trust-card p { max-width: 410px; margin: 0; color: rgba(255,255,255,.55); font-size: .83rem; line-height: 1.6; }
+    .build-standard { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(230px,.7fr) minmax(0,1.3fr); gap: 5vw; margin-top: 4rem; padding: 1.3rem 0 0; border-top: 1px solid rgba(255,255,255,.18); }
+    .build-standard strong { font: 400 clamp(1.45rem,2.3vw,2.5rem)/1 "Instrument Serif",Georgia,serif; letter-spacing: -.035em; }
+    .standard-items { display: grid; grid-template-columns: repeat(5,1fr); gap: 1px; background: rgba(255,255,255,.16); }
+    .standard-items span { min-height: 72px; display: flex; align-items: center; justify-content: center; padding: .8rem; background: #0b0c11; color: rgba(255,255,255,.63); text-align: center; font: 700 .53rem/1.35 "Space Mono",monospace; letter-spacing: .07em; text-transform: uppercase; }
     .pricing { padding: clamp(110px,15vh,175px) var(--page-x); background: var(--paper); color: var(--ink); }
     .pricing-intro { display: grid; grid-template-columns: 1.25fr .75fr; gap: 7vw; align-items: end; margin-bottom: 9vh; }
     .pricing-intro h2 { max-width: 880px; margin: 0; font: 400 clamp(3.4rem,6.7vw,7.7rem)/.84 "Instrument Serif",Georgia,serif; letter-spacing: -.068em; }
     .pricing-intro p { max-width: 410px; margin: 0 0 .7rem; color: rgba(17,18,20,.6); font-size: .92rem; line-height: 1.55; }
     .plans { border-top: 1px solid rgba(0,0,0,.3); }
-    .plan { position: relative; display: grid; grid-template-columns: minmax(230px,.6fr) minmax(170px,.35fr) minmax(350px,1fr) 56px; gap: 2.5vw; align-items: center; min-height: 190px; padding: 25px 0; border-bottom: 1px solid rgba(0,0,0,.26); transition: color .45s ease,padding .5s var(--ease); }
+    .plan { position: relative; display: grid; grid-template-columns: minmax(230px,.6fr) minmax(170px,.35fr) minmax(350px,1fr) minmax(132px,.3fr); gap: 2.5vw; align-items: center; min-height: 210px; padding: 25px 0; border-bottom: 1px solid rgba(0,0,0,.26); transition: color .45s ease,padding .5s var(--ease); }
     .plan::before { content: ""; position: absolute; z-index: 0; inset: 0 calc(var(--page-x)*-1); background: var(--night); opacity: 0; transform: scaleY(.7); transition: opacity .35s ease,transform .55s var(--ease); }
     .plan:hover,.plan:focus-within { color: var(--bone); padding-left: 1.2rem; padding-right: 1.2rem; }
     .plan:hover::before,.plan:focus-within::before { opacity: 1; transform: scaleY(1); }
@@ -300,7 +377,7 @@
     .plan:hover ul,.plan:focus-within ul { color: rgba(255,255,255,.65); }
     .plan li::before { content: "↳"; margin-right: .5rem; color: #6f8020; }
     .plan:hover li::before,.plan:focus-within li::before { color: var(--lime); }
-    .plan-cta { display: grid; place-items: center; width: 50px; height: 50px; border: 1px solid currentColor; font-size: 1.1rem; transition: transform .25s var(--ease),background .25s ease,color .25s ease; }
+    .plan-cta { display: inline-flex; align-items: center; justify-content: space-between; gap: .75rem; min-height: 48px; padding: 0 .85rem; border: 1px solid currentColor; font-size: .68rem; font-weight: 700; white-space: nowrap; transition: transform .25s var(--ease),background .25s ease,color .25s ease; }
     .plan-cta:hover { transform: translate(3px,-3px); background: var(--lime); color: var(--night); border-color: var(--lime); }
     .pricing-note { max-width: 780px; margin: 2rem 0 0 auto; color: rgba(17,18,20,.68); font-size: .68rem; line-height: 1.55; text-align: right; }
     .process { position: relative; padding: clamp(110px,16vh,190px) var(--page-x); overflow: hidden; background: #07080c; }
@@ -357,8 +434,9 @@
     .footer-meta { display: flex; align-items: center; gap: 1.5rem; color: rgba(255,255,255,.4); font: 400 .52rem/1 "Space Mono",monospace; letter-spacing: .08em; text-transform: uppercase; }
     .footer-links { display: flex; gap: 1.7rem; margin-bottom: .1rem; color: rgba(255,255,255,.58); font-size: .72rem; }
     .footer-links a:hover { color: white; }
-    .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease,transform .9s var(--ease); }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal { opacity: 1; transform: none; transition: opacity .7s ease,transform .9s var(--ease); }
+    .reveal.reveal-ready { opacity: 0; transform: translateY(26px); }
+    .reveal.reveal-ready.visible { opacity: 1; transform: translateY(0); }
     @keyframes meter { from { height: 3px; } to { height: 12px; } }
     @keyframes live-dot { 0%,100% { opacity: .4; transform: scale(.75); } 50% { opacity: 1; transform: scale(1); } }
     @keyframes word-rise { to { transform: translateY(0); } }
@@ -367,15 +445,21 @@
     @keyframes orbit-dot { to { transform: rotate(360deg); transform-origin: 0 calc(50% + 3px); } }
     @keyframes progress-in { from { transform: scaleX(0); transform-origin: left; } to { transform: scaleX(1); transform-origin: left; } }
     @keyframes filament-travel { to { transform: translateY(calc(100vh + 18vh)); } }
+    @keyframes browser-scan { 0%,12% { transform: translateY(0); opacity: 0; } 18% { opacity: 1; } 70% { opacity: .65; } 82%,100% { transform: translateY(404px); opacity: 0; } }
     @media (max-width:1100px) {
       .site-header { grid-template-columns: minmax(160px,1fr) auto minmax(210px,1fr); }
       .nav-links { gap: 1.3rem; }
       .hero-content { grid-template-columns: minmax(0,1.3fr) minmax(270px,.7fr); gap: 2.5vw; }
       .hero h1 { font-size: clamp(4rem,8vw,7rem); }
       .hero-copy { width: 56vw; }
+      .transformation-intro,.trust-intro { grid-template-columns: minmax(150px,.38fr) minmax(0,1.22fr); }
+      .transformation-intro > p,.trust-intro > p { grid-column: 2; }
+      .transformation-stage { grid-template-columns: minmax(0,.9fr) 52px minmax(0,1.1fr); padding: 42px; }
+      .demo-summary { grid-template-columns: minmax(220px,.8fr) minmax(0,1.2fr); }
+      .demo-route { grid-column: 2; width: max-content; }
       .story-phases { width: 67vw; }
       .story-orbit { right: 1vw; width: 39vw; }
-      .plan { grid-template-columns: minmax(180px,.55fr) 150px minmax(300px,1fr) 52px; }
+      .plan { grid-template-columns: minmax(180px,.55fr) 150px minmax(300px,1fr) minmax(128px,.28fr); }
       .process-list { margin-left: 4vw; }
     }
     @media (max-width:860px) {
@@ -386,6 +470,22 @@
       .hero-actions { flex-direction: row; }
       .industry-rail { grid-template-columns: 1fr auto; }
       .industry-rail > span { display: none; }
+      .value-strip-inner { grid-template-columns: repeat(3,1fr); }
+      .value-label { grid-column: 1/-1; min-height: 58px; border-right: 0; border-bottom: 1px solid rgba(0,0,0,.18); }
+      .value-item { min-height: 68px; }
+      .value-item:nth-child(4) { border-right: 0; }
+      .transformation-intro,.trust-intro { grid-template-columns: 1fr; gap: 2rem; }
+      .transformation-intro > p,.trust-intro > p { grid-column: auto; }
+      .transformation-stage { grid-template-columns: minmax(0,.9fr) 42px minmax(0,1.1fr); padding: 32px; min-height: 540px; }
+      .browser { min-height: 330px; }
+      .before-site,.after-site { min-height: 296px; }
+      .demo-caption { grid-template-columns: 1fr; gap: 1.5rem; }
+      .trust-grid { grid-template-columns: 1fr; }
+      .trust-card { min-height: 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.16); }
+      .trust-card:last-child { border-bottom: 0; }
+      .trust-card > span { margin-bottom: 3rem; }
+      .build-standard { grid-template-columns: 1fr; }
+      .standard-items { grid-template-columns: repeat(5,1fr); }
       .manifesto-foot { width: 65vw; }
       .story-phases { width: 72vw; }
       .story-orbit { right: -11vw; width: 53vw; opacity: .75; }
@@ -395,7 +495,7 @@
       .outcome-row { grid-template-columns: 100px 1fr; padding: 2.2rem 0; }
       .outcome-row p { grid-column: 2; }
       .pricing-intro { grid-template-columns: 1fr; }
-      .plan { grid-template-columns: 1fr 150px 50px; }
+      .plan { grid-template-columns: 1fr 150px minmax(128px,.3fr); }
       .plan ul { grid-column: 1/3; }
       .process-intro { grid-template-columns: 1fr; }
       .process-step { grid-template-columns: 120px 1fr; padding: 2.5rem 0; }
@@ -414,25 +514,51 @@
       .sound-toggle { min-width: 44px; width: 44px; height: 44px; padding: 0; }
       .sound-label { display: none; }
       .header-review { height: 44px; padding: 0 10px; font-size: .62rem; }
-      .hero,.hero-content { min-height: max(780px,100svh); }
-      .hero-content { display: block; padding: 100px 20px 255px; }
+      .hero { min-height: 0; }
+      .hero-content { min-height: 0; display: block; padding: 100px 20px 30px; }
       .hero .eyebrow { margin-bottom: 2.7vh; font-size: .62rem; }
       .hero h1 { font-size: clamp(3.4rem,17.4vw,6.6rem); line-height: .79; }
-      .transmission { position: absolute; left: 20px; right: 20px; bottom: 145px; width: auto; display: grid; grid-template-columns: 1fr 1.08fr; gap: .9rem; }
+      .transmission { position: relative; left: auto; right: auto; bottom: auto; width: auto; display: grid; grid-template-columns: 1fr 1.08fr; gap: .9rem; margin-top: 2.7rem; }
       .transmission-head { grid-column: 1/-1; margin-bottom: .1rem; }
       .live-question { min-height: 0; margin: 0; font-size: 1.08rem; }
       .signal-step { min-height: 26px; grid-template-columns: 19px 1fr; font-size: .58rem; }
       .signal-step .value { display: none; }
-      .hero-copy { left: 20px; bottom: 82px; width: calc(100vw - 40px); grid-template-columns: 1fr auto; align-items: end; gap: .8rem; }
-      .hero-copy p { display: none; }
-      .hero-actions { flex-direction: row; gap: 1.1rem; }
+      .hero-copy { position: relative; left: auto; bottom: auto; width: auto; grid-template-columns: 1fr; align-items: start; gap: 1.25rem; padding: 0 20px 118px; }
+      .hero-copy p { display: block; max-width: 560px; font-size: .86rem; line-height: 1.55; }
+      .hero-actions { display: grid; grid-template-columns: 1fr; align-items: start; gap: .55rem; width: max-content; max-width: 100%; }
       .primary-cta,.signal-link { min-height: 40px; font-size: .68rem; gap: .8rem; }
       .primary-cta span,.signal-link span { width: 29px; height: 29px; }
-      .signal-link { display: none; }
       .industry-rail { left: 20px; right: 20px; bottom: 14px; grid-template-columns: 1fr auto; gap: .55rem; }
       .industry-controls { justify-content: space-between; gap: .35rem; }
       .industry { min-height: 34px; font-size: .58rem; }
       .rotation-toggle { min-height: 34px; padding-left: .55rem; font-size: .58rem; }
+      .value-strip-inner { grid-template-columns: 1fr 1fr; padding: 0 20px; }
+      .value-label { min-height: 54px; }
+      .value-item { min-height: 64px; padding: 0 .7rem; font-size: .7rem; }
+      .value-item:nth-child(odd) { border-right: 0; }
+      .value-item:nth-child(4) { border-right: 1px solid rgba(0,0,0,.18); }
+      .transformations,.trust { padding-top: 110px; padding-bottom: 110px; }
+      .transformation-intro,.trust-intro { margin-bottom: 6vh; }
+      .transformation-intro h2,.trust-intro h2 { font-size: clamp(3.35rem,15.5vw,6rem); }
+      .transformation-intro p,.trust-intro p { font-size: .82rem; }
+      .demo-switcher { grid-template-columns: 1fr 1fr; }
+      .demo-tab:nth-child(2) { border-right: 0; }
+      .transformation-stage { display: block; min-height: 0; padding: 24px 14px; }
+      .browser { min-height: 310px; border-radius: 8px; }
+      .browser-before,.browser-after { transform: none; }
+      .before-site,.after-site { min-height: 276px; padding: 24px 20px; }
+      .before-nav { margin-bottom: 2.5rem; }
+      .after-nav { margin-bottom: 3rem; }
+      .scan-divider { height: 62px; }
+      .scan-divider::before { left: 4%; right: 4%; top: 50%; bottom: auto; width: auto; height: 1px; }
+      .scan-divider span { padding: .2rem .6rem; writing-mode: horizontal-tb; }
+      .demo-summary { grid-template-columns: 1fr; gap: 1.3rem; }
+      .demo-route { grid-column: auto; }
+      .demo-features { font-size: .72rem; }
+      .trust-card { padding: 32px 0; }
+      .trust-card > span { margin-bottom: 2.5rem; }
+      .standard-items { grid-template-columns: 1fr 1fr; }
+      .standard-items span:last-child { grid-column: 1/-1; }
       .manifesto { padding-top: 110px; padding-bottom: 110px; }
       .manifesto .eyebrow { margin-bottom: 4vh; }
       .manifesto-copy { font-size: clamp(3.25rem,16vw,6rem); line-height: .88; }
@@ -471,8 +597,8 @@
       .pricing-intro h2 { font-size: clamp(3.4rem,15.5vw,6rem); }
       .plan { grid-template-columns: 1fr auto; gap: 1rem; min-height: 0; padding: 2.2rem 0; }
       .plan .price { text-align: right; }
-      .plan ul { grid-column: 1/-1; grid-template-columns: 1fr; gap: .48rem; padding-right: 55px; }
-      .plan-cta { position: absolute; right: 0; bottom: 2rem; width: 44px; height: 44px; }
+      .plan ul { grid-column: 1/-1; grid-template-columns: 1fr; gap: .48rem; padding-right: 0; }
+      .plan-cta { position: static; grid-column: 1/-1; width: max-content; height: 44px; }
       .plan:hover,.plan:focus-within { padding-left: 0; padding-right: 0; }
       .pricing-note { text-align: left; }
       .process::before { left: 26px; top: 41vh; bottom: 14vh; }
@@ -509,6 +635,7 @@
       .header-review { padding: 0 8px; }
       .hero-content { padding-top: 92px; }
       .hero h1 { font-size: clamp(3.2rem,16.5vw,4.8rem); }
+      .demo-features { grid-template-columns: 1fr; }
       .live-question { font-size: .96rem; }
       .industry { font-size: .54rem; }
       .rotation-toggle { font-size: .54rem; }
@@ -532,7 +659,7 @@
     @media (prefers-reduced-motion:reduce) {
       html { scroll-behavior: auto; }
       *,*::before,*::after { animation-duration: .01ms!important; animation-iteration-count: 1!important; transition-duration: .01ms!important; }
-      .reveal { opacity: 1; transform: none; }
+      .reveal,.reveal.reveal-ready { opacity: 1; transform: none; }
       .hero h1 .line > span { transform: none; }
       .story-scroll { height: auto; }
       .story-stage { position: relative; height: auto; min-height: 0; padding: 115px var(--page-x) 90px; }
@@ -540,6 +667,7 @@
       .story-phase { position: relative; opacity: 1; transform: none; margin-bottom: 4rem; }
       .story-orbit,.story-signal,.story-progress,.story-count { display: none; }
       .frequency-image { transition: none; transform: none; }
+      .browser-after::after { display: none; }
     }
   </style>
 </head>
@@ -551,7 +679,7 @@
   <header class="site-header">
     <a class="brand" href="#top" aria-label="BusinessBoost48 home">BusinessBoost<span>48</span></a>
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="#services">Services</a><a href="#industries">Industries</a><a href="#pricing">Pricing</a><a href="#process">Process</a>
+      <a href="#services">Services</a><a href="#transformations">Examples</a><a href="#pricing">Pricing</a><a href="#process">Process</a>
     </nav>
     <div class="header-actions">
       <button class="sound-toggle" type="button" aria-label="Enable sound" aria-pressed="false"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span><span class="sound-label">Enable sound</span></button>
@@ -563,26 +691,26 @@
       <canvas id="signal-canvas" aria-hidden="true"></canvas>
       <div class="hero-content" id="hero-content" tabindex="-1">
         <div class="hero-main">
-          <div class="eyebrow">AI website design for UK businesses</div>
-          <h1 id="hero-title"><span class="line"><span>Your next customer</span></span> <span class="line"><span>is sending a <em>signal.</em></span></span> <span class="line"><span>Will you answer?</span></span></h1>
+          <div class="eyebrow">AI website design for UK small businesses</div>
+          <h1 id="hero-title"><span class="line"><span>AI websites</span></span> <span class="line"><span>built to win</span></span> <span class="line"><span>more <em>enquiries.</em></span></span></h1>
         </div>
         <aside class="transmission" aria-label="Live customer journey">
-          <div class="transmission-head"><span>Live transmission</span><b>Receiving</b></div>
+          <div class="transmission-head"><span class="transmission-label">Example journey · Garage</span><b>Live</b></div>
           <p class="live-question">“Can you fit my MOT in tomorrow?”</p>
           <div class="signal-steps">
-            <div class="signal-step lit"><span class="n">01</span><span>Question</span><span class="value">Found</span></div>
-            <div class="signal-step"><span class="n">02</span><span>Intent</span><span class="value live-value">MOT</span></div>
-            <div class="signal-step"><span class="n">03</span><span>Action</span><span class="value">Shaped</span></div>
-            <div class="signal-step"><span class="n">04</span><span>Human</span><span class="value">Ready</span></div>
+            <div class="signal-step lit"><span class="n">01</span><span>Customer asks</span><span class="value">Found</span></div>
+            <div class="signal-step"><span class="n">02</span><span>Intent understood</span><span class="value live-value">MOT</span></div>
+            <div class="signal-step"><span class="n">03</span><span>Right action</span><span class="value">Ready</span></div>
+            <div class="signal-step"><span class="n">04</span><span>Human handoff</span><span class="value">Ready</span></div>
           </div>
         </aside>
       </div>
       <div class="hero-copy">
-        <p>We design premium, conversion-focused websites for UK businesses—built to understand intent, guide action and hand the right enquiries to you.</p>
-        <div class="hero-actions"><a class="primary-cta" href="#audit">Get my free website review <span aria-hidden="true">↗</span></a><a class="signal-link" href="#experience">See it respond <span aria-hidden="true">↓</span></a></div>
+        <p>Strategy, copy, custom design, technical SEO and practical AI—built around one clear customer journey. First working version often within 48 hours. Packages from £299.</p>
+        <div class="hero-actions"><a class="primary-cta" href="#audit">Get my free website review <span aria-hidden="true">↗</span></a><a class="signal-link" href="#transformations">See transformations <span aria-hidden="true">↓</span></a></div>
       </div>
       <div class="industry-rail" role="group" aria-label="Choose a business example">
-        <span>Watch the signal change</span>
+        <span>Choose an example journey</span>
         <div class="industry-controls">
           <button class="industry" type="button" data-industry="restaurant" aria-pressed="false">Restaurant</button>
           <button class="industry" type="button" data-industry="trades" aria-pressed="false">Trades</button>
@@ -592,23 +720,88 @@
         <button class="rotation-toggle" type="button" aria-pressed="false">Pause rotation</button>
       </div>
     </section>
+    <section class="value-strip" aria-label="What every BusinessBoost48 website starts with">
+      <div class="value-strip-inner">
+        <div class="value-label">Every build starts with</div>
+        <div class="value-item">Clear positioning</div>
+        <div class="value-item">Custom design</div>
+        <div class="value-item">Mobile-first build</div>
+        <div class="value-item">SEO foundations</div>
+        <div class="value-item">Human review</div>
+      </div>
+    </section>
+    <section class="transformations" id="transformations" aria-labelledby="transformations-title">
+      <div class="transformation-intro">
+        <div class="eyebrow">Interactive website concepts</div>
+        <h2 id="transformations-title">From vague brochure to <em>clear customer journey.</em></h2>
+        <p>Choose an industry to see how strategy, words and design can turn a generic website into a focused route to booking or enquiry.</p>
+      </div>
+      <div class="demo-switcher" role="group" aria-label="Choose a website transformation concept">
+        <button class="demo-tab" type="button" data-demo-industry="restaurant" aria-pressed="false">Restaurant</button>
+        <button class="demo-tab" type="button" data-demo-industry="trades" aria-pressed="false">Trades</button>
+        <button class="demo-tab" type="button" data-demo-industry="retail" aria-pressed="false">Retail</button>
+        <button class="demo-tab" type="button" data-demo-industry="garage" aria-pressed="true">Garage</button>
+      </div>
+      <div class="transformation-stage" aria-live="polite">
+        <div class="browser-wrap">
+          <div class="browser-label"><span>Before</span><b>Generic and unclear</b></div>
+          <div class="browser browser-before" aria-hidden="true">
+            <div class="browser-chrome"><span class="chrome-dots"><i></i><i></i><i></i></span><span class="address">example-business.co.uk</span><span></span></div>
+            <div class="before-site"><div class="before-nav"><span>Home</span><span>About us</span><span>Services</span><span>Contact</span></div><h3>Welcome to our website</h3><p>We provide a range of professional services. Browse our website to learn more about what we do.</p><span class="before-button">Learn more</span></div>
+          </div>
+        </div>
+        <div class="scan-divider" aria-hidden="true"><span>Clarity scan</span></div>
+        <div class="browser-wrap">
+          <div class="browser-label"><span>After</span><b class="demo-industry-label">Garage journey</b></div>
+          <div class="browser browser-after">
+            <div class="browser-chrome"><span class="chrome-dots"><i></i><i></i><i></i></span><span class="address demo-domain">sample-garage.co.uk</span><span></span></div>
+            <div class="after-site">
+              <div class="after-nav"><span class="demo-brand">Northline Garage</span><span class="demo-nav-action">Book an MOT</span></div>
+              <span class="after-kicker demo-kicker">Local servicing · Clear availability</span>
+              <h3 class="demo-screen-title">Your MOT, booked without the back-and-forth.</h3>
+              <p class="demo-screen-copy">Choose a service, share your registration and request a time that works.</p>
+              <span class="after-action"><span class="demo-action">Request an MOT slot</span> ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-caption">
+        <p class="demo-honesty">Demonstration concept · Not a client result · No customer data submitted</p>
+        <div class="demo-summary">
+          <h3 class="demo-summary-title">Turn local searches into service requests.</h3>
+          <ul class="demo-features"><li>Service-led structure</li><li>MOT request journey</li><li>Trust and opening hours</li><li>Mobile-first contact</li></ul>
+          <a class="demo-route" href="/garages/"><span class="demo-route-label">Explore garage websites</span> <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="outcomes" id="services" aria-labelledby="outcomes-title">
+      <div class="section-head"><div class="eyebrow">Exactly what we do</div><h2 class="section-title" id="outcomes-title">Strategy, words, design and build—<em>joined up from day one.</em></h2></div>
+      <div class="outcome-list">
+        <article class="outcome-row"><span>01 / Strategy</span><h3>Website strategy and copy.</h3><p>We sharpen what you offer, who it is for and why a customer should take the next step.</p></article>
+        <article class="outcome-row"><span>02 / Design</span><h3>Custom design and build.</h3><p>A distinctive, responsive website shaped around your business—not a recycled theme with your logo dropped in.</p></article>
+        <article class="outcome-row"><span>03 / Conversion</span><h3>Enquiry and booking journeys.</h3><p>Clear calls to action, forms and guided paths turn interest into a useful next step.</p></article>
+        <article class="outcome-row"><span>04 / Search</span><h3>Technical SEO foundations.</h3><p>Search-friendly structure, metadata, mobile performance and crawlable service content are built in from launch.</p></article>
+        <article class="outcome-row"><span>05 / Intelligence</span><h3>Practical AI, when it helps.</h3><p>Approved answers and intelligent journeys can reduce customer friction while keeping people in control.</p></article>
+        <article class="outcome-row"><span>06 / Launch</span><h3>Testing and launch support.</h3><p>We check the agreed journey across devices, complete the final checks and support the approved release.</p></article>
+      </div>
+    </section>
     <section class="manifesto">
-      <div class="eyebrow reveal">The living website</div>
-      <p class="manifesto-copy reveal"><span class="soft">Most websites wait.</span> The next generation notices, understands and <em>moves with the customer.</em></p>
-      <div class="manifesto-foot reveal"><b>Your website should not just sit there. It should move customers forward.</b><p>Not AI for show. Useful answers, approved guidance and a deliberate human handoff when it matters.</p></div>
+      <div class="eyebrow reveal">Beautiful is only the beginning</div>
+      <p class="manifesto-copy reveal"><span class="soft">A website has one job:</span> help the right customer <em>choose you.</em></p>
+      <div class="manifesto-foot reveal"><b>Clear message. Credible proof. Obvious next step.</b><p>We bring them together in one custom, mobile-first build—then add useful intelligence only where it removes friction.</p></div>
     </section>
     <section class="story-scroll" id="experience" aria-labelledby="experience-title">
       <div class="story-stage">
-        <div class="story-head"><h2 class="eyebrow" id="experience-title">How an AI website turns questions into enquiries</h2><span class="story-count"><b>01</b> / 04</span></div>
+        <div class="story-head"><h2 class="eyebrow" id="experience-title">How a clear website moves a customer forward</h2><span class="story-count"><b>01</b> / 04</span></div>
         <div class="story-phases">
-          <article class="story-phase active" style="--phase-color:#dcff49"><span class="phase-kicker">01 / Listen</span><h3>The question <em>arrives.</em></h3><p>Your customer should not have to decode your business. The experience begins with what they actually need.</p></article>
-          <article class="story-phase" style="--phase-color:#5b74ff"><span class="phase-kicker">02 / Understand</span><h3>The intent becomes <em>clear.</em></h3><p>Useful, approved intelligence recognises the task, urgency and information required to move forward.</p></article>
-          <article class="story-phase" style="--phase-color:#9b72ff"><span class="phase-kicker">03 / Guide</span><h3>The right path <em>forms.</em></h3><p>Content and next steps adapt around the customer instead of leaving them at another generic contact form.</p></article>
-          <article class="story-phase" style="--phase-color:#ff7352"><span class="phase-kicker">04 / Handoff</span><h3>A better conversation <em>starts.</em></h3><p>The right context reaches a real person. You stay in control and the enquiry arrives ready for a useful response.</p></article>
+          <article class="story-phase active" style="--phase-color:#dcff49"><span class="phase-kicker">01 / Explain</span><h3>They know what you <em>do.</em></h3><p>A sharp opening tells the right customer they are in the right place—without jargon, guessing or endless scrolling.</p></article>
+          <article class="story-phase" style="--phase-color:#5b74ff"><span class="phase-kicker">02 / Prove</span><h3>Doubt becomes <em>trust.</em></h3><p>Real evidence, clear expectations and useful detail answer the questions that normally stop people taking action.</p></article>
+          <article class="story-phase" style="--phase-color:#9b72ff"><span class="phase-kicker">03 / Guide</span><h3>The next step feels <em>obvious.</em></h3><p>Content, calls to action and optional intelligence guide each customer towards the service, booking or answer they need.</p></article>
+          <article class="story-phase" style="--phase-color:#ff7352"><span class="phase-kicker">04 / Enquire</span><h3>A useful conversation <em>starts.</em></h3><p>The right context reaches a real person. You remain in control and the customer knows exactly what happens next.</p></article>
         </div>
         <div class="story-orbit" aria-hidden="true"><i class="orbit-ring" style="--ring:0"></i><i class="orbit-ring" style="--ring:1"></i><i class="orbit-ring" style="--ring:2"></i><i class="orbit-ring" style="--ring:3"></i><span class="orbit-core"></span></div>
         <div class="story-signal"><small>Incoming signal · Garage</small><p>“Can you fit my MOT in tomorrow?”</p></div>
-        <div class="story-progress" aria-hidden="true"><span class="progress-step active">Listen</span><span class="progress-step">Understand</span><span class="progress-step">Guide</span><span class="progress-step">Handoff</span></div>
+        <div class="story-progress" aria-hidden="true"><span class="progress-step active">Explain</span><span class="progress-step">Prove</span><span class="progress-step">Guide</span><span class="progress-step">Enquire</span></div>
       </div>
     </section>
     <section class="frequencies" id="industries" aria-labelledby="industries-title">
@@ -618,10 +811,10 @@
         <div class="frequency-image" data-industry-image="retail" data-image="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&amp;fit=crop&amp;w=1600&amp;q=82"></div>
         <div class="frequency-image active" data-industry-image="garage" data-image="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&amp;fit=crop&amp;w=1600&amp;q=82"></div>
       </div>
-      <p class="honesty">Interactive concept · Sample journey<br>Nothing submitted</p>
+      <p class="honesty">Demonstration concept · Not client work<br>No customer data submitted</p>
       <div class="frequency-content">
-        <div class="frequency-copy"><div class="eyebrow">Web design for restaurants, trades, retail and garages</div><h2 id="industries-title"><span>Every customer</span> <span class="outline">arrives differently.</span></h2><p>We create mobile-first restaurant websites for bookings, trades websites for urgent enquiries, retail journeys for product discovery and garage websites for service and MOT requests.</p></div>
-        <aside class="frequency-result" aria-label="Selected industry customer journey"><small>Incoming customer intent · Garage</small><blockquote>“Can you fit my MOT in tomorrow?”</blockquote><div class="result-outcome"><span>Right next step</span><b>Appointment request ready</b></div></aside>
+        <div class="frequency-copy"><div class="eyebrow">Websites shaped around real buying decisions</div><h2 id="industries-title"><span>Different business.</span> <span class="outline">Different journey.</span></h2><p>A restaurant needs bookings, a trade needs qualified jobs, a retailer needs product discovery and a garage needs service requests. The structure should change with the customer—not just the colour palette.</p></div>
+        <aside class="frequency-result" aria-label="Selected industry customer journey"><small>Incoming customer intent · Garage</small><blockquote>“Can you fit my MOT in tomorrow?”</blockquote><div class="result-outcome"><span>Right next step</span><b>Appointment request ready</b></div><a class="industry-route" href="/garages/"><span class="industry-route-label">Explore garage websites</span> <span aria-hidden="true">↗</span></a></aside>
       </div>
       <div class="frequency-index" role="group" aria-label="Choose an industry frequency">
         <button class="frequency-button" type="button" data-index="01" data-industry="restaurant" aria-pressed="false">Restaurant</button>
@@ -630,31 +823,35 @@
         <button class="frequency-button" type="button" data-index="04" data-industry="garage" aria-pressed="true">Garage</button>
       </div>
     </section>
-    <section class="outcomes" id="services" aria-labelledby="outcomes-title">
-      <div class="section-head"><div class="eyebrow reveal">Web design for UK small businesses</div><h2 class="section-title reveal" id="outcomes-title">AI website design that gets businesses <em>found, trusted and chosen.</em></h2></div>
-      <div class="outcome-list">
-        <article class="outcome-row reveal"><span>01 / Design</span><h3>Small business websites that stand apart.</h3><p>Custom, mobile-first website design gives your UK business a sharper message, stronger visual identity and an obvious reason to choose you.</p></article>
-        <article class="outcome-row reveal"><span>02 / Intelligence</span><h3>Practical AI that guides customers.</h3><p>Approved answers and intelligent journeys help customers find the right service, booking or next step without losing human control.</p></article>
-        <article class="outcome-row reveal"><span>03 / Conversion</span><h3>Website rebuilds that remove dead ends.</h3><p>We reshape unclear, dated or underperforming websites around trust, useful content and a focused enquiry journey.</p></article>
-        <article class="outcome-row reveal"><span>04 / Search</span><h3>Fast foundations built for discovery.</h3><p>Semantic content, technical SEO, mobile performance and clear page structure give search engines and customers the right signals from launch.</p></article>
+    <section class="trust" aria-labelledby="trust-title">
+      <div class="trust-intro">
+        <div class="eyebrow">Modern tools · Human judgement</div>
+        <h2 id="trust-title">AI helps us move faster. <em>A person directs what goes live.</em></h2>
+        <p>We use modern tools to accelerate research, structure, design and testing. Your message, customer journey and final release are still reviewed by a person.</p>
       </div>
+      <div class="trust-grid">
+        <article class="trust-card" style="--card-color:#dcff49"><span>01 / Direction</span><h3>See the thinking before launch.</h3><p>We show the working direction, explain the important decisions and keep the build tied to an agreed business goal.</p></article>
+        <article class="trust-card" style="--card-color:#5b74ff"><span>02 / Clarity</span><h3>Scope and costs in writing.</h3><p>Pages, content, features, timing, third-party costs and ongoing requirements are confirmed before work begins.</p></article>
+        <article class="trust-card" style="--card-color:#ff7352"><span>03 / Control</span><h3>Useful AI, never a black box.</h3><p>Intelligent features use approved business knowledge and clear handoff rules. AI is included only where it adds practical value.</p></article>
+      </div>
+      <div class="build-standard"><strong>Every approved launch is checked for:</strong><div class="standard-items"><span>Mobile journey</span><span>Accessibility</span><span>Search setup</span><span>Performance</span><span>Human review</span></div></div>
     </section>
     <section class="pricing" id="pricing" aria-labelledby="pricing-title">
-      <div class="pricing-intro reveal"><h2 id="pricing-title">AI website design packages, built for momentum.</h2><p>Clear starting points, then a written scope for the exact pages, content, integrations and ongoing costs your project needs.</p></div>
+      <div class="pricing-intro reveal"><h2 id="pricing-title">Choose the right starting point.</h2><p>Clear packages for different stages of growth, followed by a written scope for the exact pages, content, integrations and ongoing costs your project needs.</p></div>
       <div class="plans">
-        <article class="plan reveal"><div class="plan-name"><small>A sharp first step</small><h3>Launch</h3></div><div class="price"><small>From</small>£299</div><ul><li>One-page custom website</li><li>Mobile-first design</li><li>Clear contact journey</li><li>Launch support</li></ul><a class="plan-cta" href="#audit" data-package="Launch" aria-label="Ask about the Launch package">↗</a></article>
-        <article class="plan reveal"><div class="plan-name"><small>Built for momentum</small><h3>Growth</h3></div><div class="price"><small>From</small>£499</div><ul><li>Conversion-focused structure</li><li>Services and proof</li><li>Lead capture journey</li><li>SEO-ready foundation</li></ul><a class="plan-cta" href="#audit" data-package="Growth" aria-label="Ask about the Growth package">↗</a></article>
-        <article class="plan reveal"><div class="plan-name"><small>Practical AI, clearly scoped</small><h3>Smart Growth</h3></div><div class="price"><small>From</small>£999</div><ul><li>Everything in Growth</li><li>One intelligent journey</li><li>Approved business knowledge</li><li>Human handoff rules</li></ul><a class="plan-cta" href="#audit" data-package="Smart Growth" aria-label="Ask about the Smart Growth package">↗</a></article>
+        <article class="plan reveal"><div class="plan-name"><small>One sharp page for a new or small offer</small><h3>Launch</h3></div><div class="price"><small>From</small>£299</div><ul><li>One focused custom website</li><li>Core message and CTA structure</li><li>Mobile-first design</li><li>Contact journey</li><li>Technical SEO foundations</li><li>Launch checks</li></ul><a class="plan-cta" href="#audit" data-package="Launch">Discuss Launch <span aria-hidden="true">↗</span></a></article>
+        <article class="plan reveal"><div class="plan-name"><small>More room to explain, prove and convert</small><h3>Growth</h3></div><div class="price"><small>From</small>£499</div><ul><li>Everything in Launch</li><li>Expanded service structure</li><li>Trust and proof sections</li><li>Lead-capture journey</li><li>Conversion copy guidance</li><li>Search-ready content structure</li></ul><a class="plan-cta" href="#audit" data-package="Growth">Discuss Growth <span aria-hidden="true">↗</span></a></article>
+        <article class="plan reveal"><div class="plan-name"><small>One useful AI-assisted customer journey</small><h3>Smart Growth</h3></div><div class="price"><small>From</small>£999</div><ul><li>Everything in Growth</li><li>One guided AI experience</li><li>Approved business knowledge</li><li>Customer-intent capture</li><li>Human handoff rules</li><li>Implementation and testing</li></ul><a class="plan-cta" href="#audit" data-package="Smart Growth">Discuss Smart Growth <span aria-hidden="true">↗</span></a></article>
       </div>
-      <p class="pricing-note">Exact pages, revisions, content responsibilities, hosting, support and any third-party usage or subscription costs are confirmed in writing before work begins.</p>
+      <p class="pricing-note">Prices shown are starting points, not quotes. Your written scope confirms exact pages, revisions, content responsibilities, total price, whether VAT applies, hosting, support and any third-party usage or subscription costs before work begins.</p>
     </section>
     <section class="process" id="process" aria-labelledby="process-title">
-      <div class="process-intro reveal"><h2 id="process-title">Fast website design. Careful enough to work.</h2><div class="process-copy"><div class="eyebrow">First working version often within 48 hours</div><p>A focused build for owners who need momentum, without pretending every smart integration is instant.</p></div></div>
+      <div class="process-intro reveal"><h2 id="process-title">A clear route from your current website to a better one.</h2><div class="process-copy"><div class="eyebrow">First working version often within 48 hours</div><p>A focused build for owners who need momentum, with the scope and realistic timeline agreed before work begins.</p></div></div>
       <div class="process-list">
-        <article class="process-step reveal" style="--step-color:#dcff49"><span class="process-number">01</span><h3>Listen.</h3><p>We review the current journey, customer questions and where trust or enquiries are being lost.</p></article>
-        <article class="process-step reveal" style="--step-color:#5b74ff"><span class="process-number">02</span><h3>Direct.</h3><p>Message, structure and visual direction are shaped around the outcome your business actually needs.</p></article>
-        <article class="process-step reveal" style="--step-color:#9b72ff"><span class="process-number">03</span><h3>Build.</h3><p>Design, words, motion and useful intelligence become one coherent mobile-first experience.</p></article>
-        <article class="process-step reveal" style="--step-color:#ff7352"><span class="process-number">04</span><h3>Prove.</h3><p>We check the real journey across devices, then show you what works before launch.</p></article>
+        <article class="process-step reveal" style="--step-color:#dcff49"><span class="process-number">01</span><h3>Review.</h3><p>We examine your current message, mobile experience, customer questions and enquiry path.</p></article>
+        <article class="process-step reveal" style="--step-color:#5b74ff"><span class="process-number">02</span><h3>Scope.</h3><p>We confirm the pages, content, features, costs and realistic timeline in writing.</p></article>
+        <article class="process-step reveal" style="--step-color:#9b72ff"><span class="process-number">03</span><h3>Build.</h3><p>Strategy, words, design, motion and any useful intelligence become one coherent mobile-first experience.</p></article>
+        <article class="process-step reveal" style="--step-color:#ff7352"><span class="process-number">04</span><h3>Test + launch.</h3><p>We test the agreed journey across devices, complete final checks and publish the approved version.</p></article>
       </div>
       <p class="timing-note">The 48-hour window begins once scope, content and access are confirmed. Complex integrations may need a separately agreed timeline.</p>
     </section>
@@ -666,18 +863,20 @@
         <article class="question-row reveal"><span>03</span><h3>What does AI add to a business website?</h3><p>Practical AI can recognise customer intent, provide approved guidance and prepare a better human handoff. It should remove friction—not replace your judgement.</p></article>
         <article class="question-row reveal"><span>04</span><h3>Is SEO included?</h3><p>Every build starts with crawlable content, semantic structure, strong metadata and mobile performance. Competitive rankings also depend on useful ongoing content, reputation and relevant links.</p></article>
         <article class="question-row reveal"><span>05</span><h3>Can the first version really arrive in 48 hours?</h3><p>Often, yes—once scope, content and access are confirmed. Larger websites and complex integrations receive a realistic written timeline before work begins.</p></article>
+        <article class="question-row reveal"><span>06</span><h3>Are the website examples client results?</h3><p>No. The interactive transformations are clearly labelled demonstration concepts. Genuine client work, reviews and results will only appear when they can be verified.</p></article>
+        <article class="question-row reveal"><span>07</span><h3>What will my final price include?</h3><p>Your written scope confirms pages, revisions, content responsibilities, integrations, hosting, support, VAT treatment and any third-party costs before work begins.</p></article>
       </div>
     </section>
     <section class="audit" id="audit" aria-labelledby="audit-title">
       <div class="audit-inner">
-        <div class="eyebrow reveal">Free website review</div><h2 class="reveal" id="audit-title">What is your website <em>not answering yet?</em></h2>
+        <div class="eyebrow reveal">Free website review</div><h2 class="reveal" id="audit-title">Your website may look fine. <em>Let’s find the friction.</em></h2>
         <div class="audit-layout reveal">
-          <div class="audit-copy"><strong>No fake score. No obligation.</strong> We will personally review your message, mobile journey, trust, enquiry flow and where practical AI could genuinely remove friction.</div>
+          <div class="audit-copy"><strong>A useful review, not a sales script.</strong> Share your website and main goal. We will personally review its message, mobile experience, trust signals, search foundations and enquiry journey.</div>
           <form class="audit-form" novalidate>
             <div class="field"><label for="website">Your website</label><input id="website" name="website" type="text" inputmode="url" autocomplete="url" maxlength="240" required placeholder="yourbusiness.co.uk"></div>
             <div class="field"><label for="goal">What should it do better? (optional)</label><input id="goal" name="goal" type="text" maxlength="300" placeholder="More enquiries, bookings, clarity…"></div>
             <div class="submit-row"><p>This opens your email app with the details ready. Nothing is sent until you press send.</p><button class="submit" type="submit">Request my free review <span aria-hidden="true">↗</span></button></div>
-            <p class="form-note" role="status">Your email is ready. Check the details, then press send.</p>
+            <p class="form-note" role="status">Opening your email app. Review the details there, then press send.</p>
           </form>
         </div>
       </div>
@@ -711,12 +910,35 @@
       const storyOrbit = document.querySelector('.story-orbit');
       const frequencyResult = document.querySelector('.frequency-result');
       const frequenciesSection = document.querySelector('.frequencies');
+      const transmissionLabel = document.querySelector('.transmission-label');
+      const industryRoute = document.querySelector('.industry-route');
+      const industryRouteLabel = document.querySelector('.industry-route-label');
+      const transformations = document.querySelector('.transformations');
+      const demoButtons = Array.from(document.querySelectorAll('[data-demo-industry]'));
+      const demoIndustryLabel = document.querySelector('.demo-industry-label');
+      const demoDomain = document.querySelector('.demo-domain');
+      const demoBrand = document.querySelector('.demo-brand');
+      const demoNavAction = document.querySelector('.demo-nav-action');
+      const demoKicker = document.querySelector('.demo-kicker');
+      const demoScreenTitle = document.querySelector('.demo-screen-title');
+      const demoScreenCopy = document.querySelector('.demo-screen-copy');
+      const demoAction = document.querySelector('.demo-action');
+      const demoSummaryTitle = document.querySelector('.demo-summary-title');
+      const demoFeatures = Array.from(document.querySelectorAll('.demo-features li'));
+      const demoRoute = document.querySelector('.demo-route');
+      const demoRouteLabel = document.querySelector('.demo-route-label');
       const industryOrder = ['restaurant','trades','retail','garage'];
       const industryData = {
-        restaurant:{accent:'#dcff49',label:'Restaurant',question:'“Table for four tonight—somewhere special.”',intent:'Booking',outcome:'Reservation request ready'},
-        trades:{accent:'#ff7352',label:'Trades',question:'“My boiler is leaking. Can you help today?”',intent:'Urgent job',outcome:'Priority callback prepared'},
-        retail:{accent:'#9b72ff',label:'Retail',question:'“A thoughtful gift under £60 by Friday.”',intent:'Product match',outcome:'Three suitable options found'},
-        garage:{accent:'#5b74ff',label:'Garage',question:'“Can you fit my MOT in tomorrow?”',intent:'MOT',outcome:'Appointment request ready'}
+        restaurant:{accent:'#dcff49',label:'Restaurant',question:'“Table for four tonight—somewhere special.”',intent:'Booking',outcome:'Reservation request ready',route:'/restaurants/',routeLabel:'Explore restaurant websites'},
+        trades:{accent:'#ff7352',label:'Trades',question:'“My boiler is leaking. Can you help today?”',intent:'Urgent job',outcome:'Priority callback prepared',route:'/trades/',routeLabel:'Explore trades websites'},
+        retail:{accent:'#9b72ff',label:'Retail',question:'“A thoughtful gift under £60 by Friday.”',intent:'Product match',outcome:'Three suitable options found',route:'/retail/',routeLabel:'Explore retail websites'},
+        garage:{accent:'#5b74ff',label:'Garage',question:'“Can you fit my MOT in tomorrow?”',intent:'MOT',outcome:'Appointment request ready',route:'/garages/',routeLabel:'Explore garage websites'}
+      };
+      const demoData = {
+        restaurant:{accent:'#dcff49',label:'Restaurant',domain:'sample-restaurant.co.uk',brand:'Afterhours Dining',navAction:'Book a table',kicker:'Tonight’s menu · Simple reservations',title:'Tonight’s table, without the phone tag.',copy:'See the menu, check the essentials and request the right table in one focused journey.',action:'Request a table',summary:'Turn tonight’s search into tonight’s booking.',features:['Menu and occasion-led copy','Clear opening hours','Mobile booking journey','Local search foundations'],route:'/restaurants/',routeLabel:'Explore restaurant websites'},
+        trades:{accent:'#ff7352',label:'Trades',domain:'sample-trade.co.uk',brand:'RapidFlow Heating',navAction:'Get urgent help',kicker:'Local engineer · Urgent job route',title:'Boiler problem? Get to the right help fast.',copy:'Choose the problem, confirm urgency and share the details needed for a useful callback.',action:'Start urgent request',summary:'Turn an urgent search into a qualified job enquiry.',features:['Service-area clarity','Urgent and planned routes','Credentials and reassurance','Qualified quote request'],route:'/trades/',routeLabel:'Explore trades websites'},
+        retail:{accent:'#9b72ff',label:'Retail',domain:'sample-retailer.co.uk',brand:'Field & Form',navAction:'Shop the edit',kicker:'Curated products · Guided discovery',title:'Find the right gift before Friday.',copy:'Move from occasion and budget to a focused set of products, with delivery expectations made clear.',action:'Find a gift',summary:'Help customers find the right product faster.',features:['Collection-led discovery','Delivery and returns clarity','Product trust details','Focused purchase route'],route:'/retail/',routeLabel:'Explore retail websites'},
+        garage:{accent:'#5b74ff',label:'Garage',domain:'sample-garage.co.uk',brand:'Northline Garage',navAction:'Book an MOT',kicker:'Local servicing · Clear availability',title:'Your MOT, booked without the back-and-forth.',copy:'Choose a service, share your registration and request a time that works.',action:'Request an MOT slot',summary:'Turn local searches into service requests.',features:['Service-led structure','MOT request journey','Trust and opening hours','Mobile-first contact'],route:'/garages/',routeLabel:'Explore garage websites'}
       };
       let currentIndustry = 'garage';
       let rotationPaused = false;
@@ -733,6 +955,25 @@
         target.focus({preventScroll:true});
       });
 
+      function setDemoIndustry(name) {
+        const data = demoData[name];
+        if (!data) return;
+        transformations.style.setProperty('--demo-accent',data.accent);
+        demoButtons.forEach(function (button) { button.setAttribute('aria-pressed',String(button.dataset.demoIndustry === name)); });
+        demoIndustryLabel.textContent = data.label + ' journey';
+        demoDomain.textContent = data.domain;
+        demoBrand.textContent = data.brand;
+        demoNavAction.textContent = data.navAction;
+        demoKicker.textContent = data.kicker;
+        demoScreenTitle.textContent = data.title;
+        demoScreenCopy.textContent = data.copy;
+        demoAction.textContent = data.action;
+        demoSummaryTitle.textContent = data.summary;
+        demoFeatures.forEach(function (item,index) { item.textContent = data.features[index]; });
+        demoRoute.href = data.route;
+        demoRouteLabel.textContent = data.routeLabel;
+      }
+
       function loadIndustryImage(name) {
         const image = frequencyImages.find(function (candidate) { return candidate.dataset.industryImage === name; });
         if (!image || image.dataset.loaded === 'true') return;
@@ -745,6 +986,7 @@
         if (!data) return;
         currentIndustry = name;
         document.documentElement.style.setProperty('--accent',data.accent);
+        setDemoIndustry(name);
         industryButtons.forEach(function (button) { button.setAttribute('aria-pressed',String(button.dataset.industry === name)); });
         frequencyImages.forEach(function (image) { image.classList.toggle('active',image.dataset.industryImage === name); });
         if (frequenciesReady) loadIndustryImage(name);
@@ -755,11 +997,14 @@
         setTimeout(function () {
           question.textContent = data.question;
           liveValue.textContent = data.intent;
+          transmissionLabel.textContent = 'Example journey · ' + data.label;
           storySignal.querySelector('small').textContent = 'Incoming signal · ' + data.label;
           storySignal.querySelector('p').textContent = data.question;
           frequencyResult.querySelector('small').textContent = 'Incoming customer intent · ' + data.label;
           frequencyResult.querySelector('blockquote').textContent = data.question;
           frequencyResult.querySelector('b').textContent = data.outcome;
+          industryRoute.href = data.route;
+          industryRouteLabel.textContent = data.routeLabel;
           if (userInitiated) signalAnnouncer.textContent = data.label + ': ' + data.question + ' ' + data.outcome + '.';
           question.classList.remove('changing');
           liveValue.classList.remove('changing');
@@ -770,6 +1015,7 @@
         if (userInitiated) { rotationPaused = true; updateRotationControl(); pulseSound(1.05); }
       }
       industryButtons.forEach(function (button) { button.addEventListener('click',function () { setIndustry(button.dataset.industry,true); }); });
+      demoButtons.forEach(function (button) { button.addEventListener('click',function () { setIndustry(button.dataset.demoIndustry,true); }); });
       function updateRotationControl() { rotationButton.setAttribute('aria-pressed',String(rotationPaused)); rotationButton.textContent = rotationPaused ? (innerWidth <= 680 ? 'Resume' : 'Resume rotation') : (innerWidth <= 680 ? 'Pause' : 'Pause rotation'); }
       rotationButton.addEventListener('click',function () { rotationPaused = !rotationPaused; updateRotationControl(); if (!rotationPaused) pulseSound(.75); });
       updateRotationControl();
@@ -807,7 +1053,7 @@
       const revealObserver = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
       },{threshold:.14});
-      document.querySelectorAll('.reveal').forEach(function (element) { revealObserver.observe(element); });
+      document.querySelectorAll('.reveal').forEach(function (element) { element.classList.add('reveal-ready'); revealObserver.observe(element); });
       const heroObserver = new IntersectionObserver(function (entries) {
         heroVisible = entries[0].isIntersecting;
         if (heroVisible && !document.hidden && !animationFrame && !reducedMotion) animationFrame = requestAnimationFrame(drawSignal);
